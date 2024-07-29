@@ -1768,6 +1768,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.button:active,
+.button:focus {
+    background-color: #37383880; /* Same as normal background color */
+    color: white; /* Same as normal text color */
+    outline: none; /* Remove the default focus outline */
+}
+
+
 .button:hover{
     color: white;
     background-color: #373838d2;
