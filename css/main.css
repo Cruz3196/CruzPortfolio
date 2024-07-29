@@ -2034,6 +2034,21 @@ html.no-csstransitions .home-content__main {
         width: 85%;
         margin-top: 150px;
     }
+    .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .button {
+        flex: 1 1 auto; /* Allow buttons to grow and shrink */
+        margin: 4px;    /* Adjust margin to ensure space between buttons */
+        padding: 8px 12px; /* Adjust padding for smaller buttons */
+        width: auto;   /* Ensure width adjusts to content */
+        text-align: center; /* Center the button text */
+    }
+    .button i {
+        margin-right: 0.3rem; /* Adjust icon margin */
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -2053,6 +2068,14 @@ html.no-csstransitions .home-content__main {
     }
     .home-social {
         display: none;
+    }
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .button {
+        width: 100%; /* Make buttons full width */
+        margin: 4px 0; /* Adjust margin for spacing */
     }
 }
 
