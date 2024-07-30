@@ -1629,6 +1629,40 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .header-logo {
+        left: 10px;
+    }
+    .header-nav-wrap {
+        display: none;
+        height: auto;
+        width: 100%;
+        right: auto;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        padding: 120px 40px 21px;
+    }
+    .header-nav-wrap .header-nav {
+        display: block;
+        height: auto;
+        margin: 0 0 4.2rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .header-nav-wrap .header-nav li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.07);
+    }
+    .header-nav-wrap .header-nav li a {
+        padding: 18px 0;
+        line-height: 18px;
+    }
+    .header-menu-toggle {
+        display: block;
+    }
+}
 
 /* -------------------------------------------------------------------
  * make sure the menu is visible on larger screens
