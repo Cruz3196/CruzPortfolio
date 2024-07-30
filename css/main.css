@@ -1787,7 +1787,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .button-group {
-    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Adds space between buttons */
 }
 
 .button{
@@ -1804,7 +1807,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 10px 20px;
     text-decoration: none;
     font-size: 15px;
-    margin-right: 8px;
+    margin: 4px; /* Adjust as needed */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -2016,6 +2019,14 @@ html.no-csstransitions .home-content__main {
     .home-content__buttons {
         right: 30px; /* Adjust if necessary */
     }
+    .button-group {
+        justify-content: center;
+        gap: 0.5rem; /* Reduce gap on smaller screens */
+    }
+    .button {
+        font-size: 14px; /* Slightly smaller font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -2034,6 +2045,14 @@ html.no-csstransitions .home-content__main {
         display: inline-block;
         margin-right: .9rem;
     }
+    .button-group {
+        justify-content: center;
+        gap: 0.5rem; /* Maintain smaller gap */
+    }
+    .button {
+        font-size: 13px; /* Smaller font size */
+        padding: 6px 14px; /* Adjust padding */
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -2046,6 +2065,14 @@ html.no-csstransitions .home-content__main {
     .home-content__main {
         max-width: 500px;
         padding-right: 20px; /* Adjust if needed */
+    }
+    .button-group {
+        justify-content: center;
+        gap: 0.25rem; /* Smaller gap */
+    }
+    .button {
+        font-size: 12px; /* Further smaller font size */
+        padding: 4px 12px; /* Adjust padding */
     }
 }
 
@@ -2069,6 +2096,15 @@ html.no-csstransitions .home-content__main {
     .home-social::after {
         height: 8rem; /* Adjust height if needed */
     }
+    .button-group {
+        justify-content: center;
+        gap: 0.25rem; /* Maintain small gap */
+    }
+    .button {
+        font-size: 11px; /* Smaller font size */
+        padding: 4px 10px; /* Further adjust padding */
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -2118,13 +2154,15 @@ html.no-csstransitions .home-content__main {
         display: none; /* Hide if it’s taking too much space */
     }
     .button-group {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.25rem; /* Maintain small gap */
     }
     .button {
-        width: 100%;
-        margin: 4px 0;
+        font-size: 10px; /* Smaller font size */
+        padding: 4px 8px; /* Adjust padding */
     }
+
 }
 
 
