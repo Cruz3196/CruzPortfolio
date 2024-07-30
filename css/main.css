@@ -2285,9 +2285,11 @@ h1 {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 0.5rem;
+    grid-template-columns: repeat(2, 540px);
+    grid-gap: 32px;
     margin-top: 2rem;
+    justify-content: center;
+    z-index: 1;
 }
 
 .project-item {
@@ -2295,13 +2297,12 @@ h1 {
     border: 1px solid rgba(255, 255, 255, 0.04);
     border-radius: 10px;
     overflow: hidden;
-    padding: 1rem;
+    padding: 1.2rem;
     max-width: 550px; /* Adjusted max-width */
-    max-height: 500px;
+    max-height: 510px;
     margin: 0 auto; /* Center the cards horizontally */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space out items vertically */
 }
 
 .project-item img{
@@ -2329,7 +2330,9 @@ h1 {
 }
 
 .project-tags {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-tags span {
@@ -2380,7 +2383,7 @@ h1 {
     font-size: 1.4rem;
     color: #cccccca6;
     margin-top: 0.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 
 /* Responsive Design */
