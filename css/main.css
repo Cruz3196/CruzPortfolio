@@ -1787,7 +1787,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .button-group {
-    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap if needed */
+    align-items: center; /* Center vertically if needed */
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 1rem; /* Space between buttons */
 }
 
 .button{
@@ -1804,7 +1808,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 10px 20px;
     text-decoration: none;
     font-size: 15px;
-    margin-right: 8px;
+    margin-right: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -2012,8 +2016,12 @@ html.no-csstransitions .home-content__main {
     .home-content__main {
         max-width: 800px;
     }
-    .home-content__buttons {
-        right: 30px;
+    .button-group {
+        gap: 0.5rem; /* Reduce gap */
+    }
+    .button {
+        font-size: 14px; /* Slightly smaller font size */
+        padding: 8px 16px; /* Adjust padding */
     }
 }
 
@@ -2025,13 +2033,12 @@ html.no-csstransitions .home-content__main {
         padding-right: 40px;
         max-width: 680px;
     }
-    .home-content__buttons {
-        position: static;
-        text-align: left;
+    .button-group {
+        gap: 0.5rem; /* Maintain reduced gap */
     }
-    .home-content__buttons .btn {
-        display: inline-block;
-        margin-right: .9rem;
+    .button {
+        font-size: 13px; /* Smaller font size */
+        padding: 6px 14px; /* Adjust padding */
     }
 }
 
@@ -2047,6 +2054,13 @@ html.no-csstransitions .home-content__main {
     }
     .home-content__main {
         max-width: 500px;
+    }
+    .button-group {
+        gap: 0.25rem; /* Further reduce gap */
+    }
+    .button {
+        font-size: 12px; /* Smaller font size */
+        padding: 4px 12px; /* Adjust padding */
     }
 }
 
@@ -2064,11 +2078,12 @@ html.no-csstransitions .home-content__main {
     .home-content__scroll {
         bottom: -15rem;
     }
-    .home-social {
-        padding-bottom: 10.8rem;
+    .button-group {
+        gap: 0.25rem; /* Maintain small gap */
     }
-    .home-social::after {
-        height: 10.2rem;
+    .button {
+        font-size: 11px; /* Smaller font size */
+        padding: 4px 10px; /* Further adjust padding */
     }
 }
 
@@ -2088,19 +2103,11 @@ html.no-csstransitions .home-content__main {
         margin-top: 150px;
     }
     .button-group {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        gap: 0.25rem; /* Maintain small gap */
     }
     .button {
-        flex: 1 1 auto; /* Allow buttons to grow and shrink */
-        margin: 4px;    /* Adjust margin to ensure space between buttons */
-        padding: 8px 12px; /* Adjust padding for smaller buttons */
-        width: auto;   /* Ensure width adjusts to content */
-        text-align: center; /* Center the button text */
-    }
-    .button i {
-        margin-right: 0.3rem; /* Adjust icon margin */
+        font-size: 10px; /* Smaller font size */
+        padding: 4px 8px; /* Further adjust padding */
     }
 }
 
@@ -2119,16 +2126,12 @@ html.no-csstransitions .home-content__main {
     .home-content__buttons .btn {
         width: 100%;
     }
-    .home-social {
-        display: none;
-    }
     .button-group {
-        flex-direction: column;
-        align-items: center;
+        gap: 0.25rem; /* Maintain small gap */
     }
     .button {
-        width: 100%; /* Make buttons full width */
-        margin: 4px 0; /* Adjust margin for spacing */
+        font-size: 10px; /* Smaller font size */
+        padding: 4px 8px; /* Further adjust padding */
     }
 }
 
