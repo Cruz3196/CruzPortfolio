@@ -2645,7 +2645,7 @@ h1 {
  * responsive:
  * contact
  * ------------------------------------------------------------------- */
-
+/* Responsive design for contact buttons on smaller screens */
 @media only screen and (max-width: 800px) {
     .contact__form {
         padding-right: 15px;
@@ -2659,11 +2659,36 @@ h1 {
     .contact__form {
         padding-right: 10px;
     }
+    
+    /* Adjust the contact buttons to be more responsive */
+    .contact__buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons horizontally */
+        gap: 1rem; /* Space between buttons */
+    }
+    
+    .contact__buttons .btn {
+        width: 100%; /* Full width for buttons */
+        padding: 10px 0; /* Adjust padding */
+        text-align: center; /* Center text */
+    }
 }
 
 @media only screen and (max-width: 400px) {
     .contact__form {
         padding-right: 0;
+    }
+    
+    /* Further adjustments for very small screens */
+    .contact__buttons {
+        padding: 0 10px; /* Adjust padding */
+    }
+    
+    .contact__buttons .btn {
+        width: 100%; /* Full width for buttons */
+        margin: 5px 0; /* Adjust margin for spacing */
+        font-size: 1rem; /* Adjust font size if necessary */
     }
 }
 
