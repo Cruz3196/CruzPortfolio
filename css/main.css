@@ -1787,10 +1787,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem; /* Adds space between buttons */
+    margin-top: 1.5rem;
 }
 
 .button{
@@ -1807,7 +1804,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 10px 20px;
     text-decoration: none;
     font-size: 15px;
-    margin: 4px; /* Adjust as needed */
+    margin-right: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -1998,7 +1995,6 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * home
  * ------------------------------------------------------------------- */
-/* Adjustments for large screens down to iPhone 15 */
 
 @media only screen and (max-width: 1500px) {
     .home-content h1 {
@@ -2017,21 +2013,13 @@ html.no-csstransitions .home-content__main {
         max-width: 800px;
     }
     .home-content__buttons {
-        right: 30px; /* Adjust if necessary */
-    }
-    .button-group {
-        justify-content: center;
-        gap: 0.5rem; /* Reduce gap on smaller screens */
-    }
-    .button {
-        font-size: 14px; /* Slightly smaller font size */
-        padding: 8px 16px; /* Adjust padding */
+        right: 30px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .home-content h1 {
-        font-size: 10.0rem;
+        font-size:10.0rem;
     }
     .home-content__main {
         padding-right: 40px;
@@ -2045,71 +2033,48 @@ html.no-csstransitions .home-content__main {
         display: inline-block;
         margin-right: .9rem;
     }
-    .button-group {
-        justify-content: center;
-        gap: 0.5rem; /* Maintain smaller gap */
-    }
-    .button {
-        font-size: 13px; /* Smaller font size */
-        padding: 6px 14px; /* Adjust padding */
-    }
 }
 
 @media only screen and (max-width: 800px) {
     .home-content h3 {
         font-size: 1.6rem;
     }
+    .home-content h3::before {
+        width: 40px;
+    }
     .home-content h1 {
         font-size: 8rem;
     }
     .home-content__main {
         max-width: 500px;
-        padding-right: 20px; /* Adjust if needed */
-    }
-    .button-group {
-        justify-content: center;
-        gap: 0.25rem; /* Smaller gap */
-    }
-    .button {
-        font-size: 12px; /* Further smaller font size */
-        padding: 4px 12px; /* Adjust padding */
     }
 }
 
 @media only screen and (max-width: 600px) {
     .home-content {
-        padding-bottom: 25rem; /* Adjust based on content */
+        padding-bottom: 35rem;
     }
     .home-content h1 {
         font-size: 6rem;
     }
     .home-content__main {
         max-width: 380px;
-        padding: 0 10px; /* Ensure padding is appropriate */
+        padding: 0;
     }
     .home-content__scroll {
-        bottom: -15rem; /* Adjust positioning */
+        bottom: -20rem;
     }
     .home-social {
-        padding-bottom: 10rem; /* Adjust spacing */
+        padding-bottom: 10.8rem;
     }
     .home-social::after {
-        height: 8rem; /* Adjust height if needed */
+        height: 10.2rem;
     }
-    .button-group {
-        justify-content: center;
-        gap: 0.25rem; /* Maintain small gap */
-    }
-    .button {
-        font-size: 11px; /* Smaller font size */
-        padding: 4px 10px; /* Further adjust padding */
-    }
-
 }
 
 @media only screen and (max-width: 500px) {
     .s-home {
-        min-height: 654px; /* Adjust based on design needs */
+        min-height: 654px;
     }
     .home-content h3 {
         font-size: 1.5rem;
@@ -2119,8 +2084,8 @@ html.no-csstransitions .home-content__main {
     }
     .home-content__main {
         max-width: none;
-        width: 90%; /* Ensure responsive width */
-        margin-top: 100px; /* Adjust based on design */
+        width: 85%;
+        margin-top: 150px;
     }
     .button-group {
         display: flex;
@@ -2128,10 +2093,14 @@ html.no-csstransitions .home-content__main {
         justify-content: center;
     }
     .button {
-        flex: 1 1 auto;
-        margin: 4px;
-        padding: 8px 12px;
-        text-align: center;
+        flex: 1 1 auto; /* Allow buttons to grow and shrink */
+        margin: 4px;    /* Adjust margin to ensure space between buttons */
+        padding: 8px 12px; /* Adjust padding for smaller buttons */
+        width: auto;   /* Ensure width adjusts to content */
+        text-align: center; /* Center the button text */
+    }
+    .button i {
+        margin-right: 0.3rem; /* Adjust icon margin */
     }
 }
 
@@ -2140,30 +2109,29 @@ html.no-csstransitions .home-content__main {
         vertical-align: middle;
     }
     .home-content h1 {
-        font-size: 5.5rem; /* Smaller font size */
+        font-size: 6.0rem;
     }
     .home-content__main {
         width: auto;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
     .home-content__buttons .btn {
         width: 100%;
     }
     .home-social {
-        display: none; /* Hide if it’s taking too much space */
+        display: none;
     }
     .button-group {
-        flex-direction: row;
-        justify-content: center;
-        gap: 0.25rem; /* Maintain small gap */
+        flex-direction: column;
+        align-items: center;
     }
     .button {
-        font-size: 12px; /* Smaller font size */
-        padding: 10px 8px; /* Adjust padding */
+        width: 100%; /* Make buttons full width */
+        margin: 4px 0; /* Adjust margin for spacing */
     }
-
 }
+
 
 
 /* ===================================================================
