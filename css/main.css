@@ -1598,6 +1598,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     .header-logo {
         left: 20px;
     }
+    .header-logo a {
+        width: 200px; /* Adjust width of the container */
+    }
     .header-nav-wrap {
         display: none;
         height: auto;
@@ -1632,6 +1635,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 @media only screen and (max-width: 600px) {
     .header-logo {
         left: 10px;
+    }
+    .header-logo a {
+        width: 150px; /* Adjust width of the container */
     }
     .header-nav-wrap {
         display: none;
