@@ -411,15 +411,16 @@
 
     /* Type Text 
     * ------------------------------------------------------ */
-    document.addEventListener('DOMContentLoaded', function () {
-        // Initialize Typed.js
-        var typed = new Typed(".auto-input", {
-            strings: ["Jose Cruz."],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop: true
-        });
-    });
+    var ssTypeText = function() {
+        if (typeof Typed !== 'undefined') {
+            var typed = new Typed(".auto-input", {
+                strings: ["Jose Cruz."],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            });
+        }
+    };
 
     /* Initialize
     * ------------------------------------------------------ */
@@ -439,7 +440,7 @@
         ssAlertBoxes();
         ssContactForm();
         ssBackToTop();
-        Typed();
+        ssTypeText();
 
     })();
 
