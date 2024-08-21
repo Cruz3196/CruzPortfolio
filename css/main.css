@@ -2138,7 +2138,6 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 600px) {
     .home-content {
         padding-bottom: 5.6rem;
-        
     }
     .home-content h1 {
         font-size: 6rem;
@@ -2174,7 +2173,7 @@ html.no-csstransitions .home-content__main {
     .home-content__main {
         max-width: none;
         width: 85%;
-        margin-top: 60px;
+        margin-top: 40px;
     }
     .button-group {
         gap: 0.25rem; /* Maintain small gap */
