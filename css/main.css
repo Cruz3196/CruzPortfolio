@@ -2164,9 +2164,6 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 500px) {
-    .home-content{
-        margin-bottom: 2.5rem;
-    }
     .s-home {
         min-height: 654px;
     }
