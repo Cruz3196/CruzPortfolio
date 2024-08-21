@@ -2190,6 +2190,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 400px) {
     .home-content {
         vertical-align: middle;
+        margin-bottom: 3.2rem;
     }
     .home-content h1 {
         font-size: 6.0rem;
