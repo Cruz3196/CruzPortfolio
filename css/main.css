@@ -2206,6 +2206,7 @@ html.no-csstransitions .home-content__main {
 .profile-pic-container img {
     width: 100%;
     height: auto;
+    background: linear-gradient(rgba(0,0,0,0.445), rgba(0,0,0,0.4111))
 }
 
 
