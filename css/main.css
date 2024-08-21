@@ -1846,15 +1846,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 .home-content__main {
-    padding-right: 0;
-    max-width: 100%;
+    padding-right: 300px;
     position: relative;
 }
 
 
 .home-content__scroll {
     position: absolute;
-    left: 50%;  /* Center horizontally */
+    left: 60%;  /* Center horizontally */
     bottom: -40%; /* Center vertically */
     transform: translate(-50%, 50%); /* Adjust to center exactly */
     width: 80px; /* Adjust based on your design */
@@ -2078,7 +2077,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .home-content {
-        padding-bottom: 35rem;
+        padding-bottom: 6rem;
     }
     .home-content h1 {
         font-size: 6rem;
@@ -2088,14 +2087,19 @@ html.no-csstransitions .home-content__main {
         padding: 0;
     }
     .home-content__scroll {
-        bottom: -15rem;
+        position: absolute;
+        left: 50%; 
+        bottom: -80%; 
+        transform: translate(-50%, 50%);
+        width: 80px; 
+        height: 80px; 
     }
     .button-group {
-        gap: 0.25rem; /* Maintain small gap */
+        gap: 0.25rem; 
     }
     .button {
-        font-size: 12px; /* Smaller font size */
-        padding: 10px 12px; /* Further adjust padding */
+        font-size: 12px; 
+        padding: 10px 12px; 
     }
 }
 
