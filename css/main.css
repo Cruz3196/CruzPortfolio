@@ -2174,7 +2174,7 @@ html.no-csstransitions .home-content__main {
     .home-content__main {
         max-width: none;
         width: 85%;
-        margin-top: 150px;
+        margin-top: 120px;
     }
     .button-group {
         gap: 0.25rem; /* Maintain small gap */
