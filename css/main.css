@@ -2137,7 +2137,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .home-content {
-        padding-bottom: 6rem;
+        padding-bottom: 5.6rem;
     }
     .home-content h1 {
         font-size: 6rem;
