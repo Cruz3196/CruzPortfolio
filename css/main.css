@@ -2137,7 +2137,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .home-content {
-        padding-bottom: 5rem;
+        padding-bottom: 6rem;
         width: 100%;
         max-width: 1200px;
         padding: 0 20px;
