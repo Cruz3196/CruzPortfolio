@@ -2089,7 +2089,7 @@ html.no-csstransitions .home-content__main {
     .home-content__scroll {
         position: absolute;
         left: 50%; 
-        bottom: -80%; 
+        bottom: -60%; 
         transform: translate(-50%, 50%);
         width: 80px; 
         height: 80px; 
