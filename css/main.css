@@ -2137,22 +2137,13 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .home-content {
-        width: 100%;
-        max-width: 1200px;
-        padding: 0 20px;
-        position: relative;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        height: 90%;
+        padding-bottom: 5.6rem;
+        
     }
     .home-content h1 {
         font-size: 6rem;
     }
     .home-content__main {
-        padding-bottom: 1.0rem;
         max-width: 380px;
         padding: 0;
     }
