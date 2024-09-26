@@ -2018,6 +2018,21 @@ html.no-csstransitions .home-content__main {
     .home-content__main {
         max-width: 1000px;
     }
+    .home-content__scroll {
+        position: absolute;
+        left: 50%; 
+        bottom: -60%; 
+        transform: translate(-50%, 50%);
+        width: 80px; 
+        height: 80px; 
+    }
+    .button-group {
+        gap: 0.5rem; /* Reduce gap */
+    }
+    .button {
+        font-size: 14px; /* Slightly smaller font size */
+        padding: 14px 16px; /* Adjust padding */
+    }
 }
 
 @media only screen and (max-width: 1200px) {
