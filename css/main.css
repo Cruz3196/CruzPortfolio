@@ -2012,41 +2012,15 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1500px) {
-    .home-content{
-        width: 100%;
-        max-width: 1200px;
-        padding: 0 20px;
-        position: relative;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        height: 90%;
-    }
     .home-content h1 {
-        font-size: 10.0rem;
+        font-size: 13.2rem;
     }
     .home-content__main {
-        max-width: 800px;
-    }
-    .home-content__scroll {
-        position: absolute;
-        left: 50%; 
-        bottom: -60%; 
-        transform: translate(-50%, 50%);
-        width: 80px; 
-        height: 80px; 
-    }
-    .button-group {
-        gap: 0.5rem; /* Reduce gap */
-    }
-    .button {
-        font-size: 14px; /* Slightly smaller font size */
+        max-width: 1000px;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .home-content{
         width: 100%;
         max-width: 1200px;
