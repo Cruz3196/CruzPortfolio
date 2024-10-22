@@ -1748,7 +1748,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 90%;
 }
 
@@ -1856,8 +1856,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__scroll {
     position: absolute;
-    left: 60%;  /* Center horizontally */
     bottom: -40%; /* Center vertically */
+    left: 50%;
     transform: translate(-50%, 50%); /* Adjust to center exactly */
     width: 80px; /* Adjust based on your design */
     height: 80px; /* Adjust based on your design */
